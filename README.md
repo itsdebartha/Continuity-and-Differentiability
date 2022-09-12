@@ -41,3 +41,19 @@ Discontinuous
 
 ### Future Implementations
 Coming soon to this is the differentiabiity checker, and the ability to input your own function without changing `f` and multi-variable support and many bug-fixes and improvements. An improved and updated documentation will also be given.
+
+----
+The program was implemented in:
+```
+Julia Version 1.7.2
+Commit bf53498635 (2022-02-06 15:21 UTC)
+Platform Info:
+  OS: Windows (x86_64-w64-mingw32)
+  CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-12.0.1 (ORCJIT, tigerlake)
+Environment:
+  JULIA_EDITOR = code
+  JULIA_NUM_THREADS =
+```
