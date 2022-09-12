@@ -20,5 +20,10 @@ lim=function (f,x=0,eps=1.0e-7)
     end
 end
 
-f(x)=1/x
-lim(f,2)
+#Examples
+#f(x)=3x+2
+#lim(f)
+#f(x)=3x+2
+#lim(f,2)
+#f(x)=1/x
+#lim(f)
