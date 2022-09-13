@@ -10,7 +10,7 @@ The function `lim` contains three arguments:
 - `eps=1.0e-7`: The tolerance (or epsilon as we'd like to call it) of the accepted neighbourhood, inside which we'll call the function is continuous (by default its 1.0e-7)
 
 ###  Usage
-The file `limit.jl` is the file that you'd want to run. The program prompts for a user an input function. Enter the function and the program returns a DataFrame as the output which has:
+In most of the cases, the provided `Jupyter Notebook` would be enough for the tasks. Enter the function and the program returns a DataFrame as the output which has:
 - `Expression`: The input expression
 - `x`:  The point where the function needs to be checked (by default its 0)
 - `h`:  The final value of `h` such that<br> ![](https://latex2png.com/pngs/2c66ebef660f8b73d9b193b7461e16a2.png)
@@ -20,8 +20,15 @@ The file `limit.jl` is the file that you'd want to run. The program prompts for 
 - `Limit`:  If the function is discontinuous, this returns `Undefined` else this returns the limit of the function at `x`
 - `Iterations`: Number of iterations taken for attaining convergence, if any (Note that this will stop at 100 if the function is discontinuous)
 
+If anyone wants to dive deep:
+- The `dependencies.jl` file needs to be run before the other files (as it contains some libraries which needs to be loaded for the program).
+- The file `limit.jl` contains the function `lim` which is the main function in this whole project.
+- The `run.jl` program prompts the user for an input function. Thus should be run after the previous two files mentioned.
 
-Note that only functions of single variable are supported, as of now. Also, manually fabricated functions will not be accepted.
+The program works by taking a suitable value of `h`(=0.1) and then checking if the two limits are almost equal or not (by the tolerance as defined earlier) while dividing `h` by 100 in successive iterations. If it satisfies the check (within 100 iterations), then it returns as "Continuous" (via the `i` variable which is an indicator). However, if after 100 iterations, the check is still not satisfied, the program returns as "Discontinuous", again via the indicator `i`.<br>
+Plotting the function is optional, however, it has been provided as an additional visualisation.<br>
+Note that only functions of single variable are supported, as of now. Also, manually fabricated functions are not be accepted.
+
 ### Example runs
 
 ```
@@ -31,6 +38,7 @@ Note that only functions of single variable are supported, as of now. Also, manu
 ─────┼─────────────────────────────────────────────────────────────────────────────────────
    1 │ sin(x)/x        0      0.1    0.998334    0.998334  Continuous      1.0           1
 ```
+![Plot-1](plots/limit_plot1.png)
 
 ```
 1×8 DataFrame
@@ -39,16 +47,16 @@ Note that only functions of single variable are supported, as of now. Also, manu
 ─────┼───────────────────────────────────────────────────────────────────────────────────────────
    1 │ abs(x)/x        0  1.0e-199         1.0        -1.0  Discontinuous  Undefined         100
 ```
+![Plot-2](plots/limit_plot2.png)
 
 ### Future Implementations
-Coming soon to this is the differentiabiity checker, multi-variable support and many bug-fixes and improvements. An improved and updated documentation will also be given.
+Coming soon to this is the differentiabiity checker, multi-variable support and many bug-fixes and improvements. An improved and updated documentation will also be provided.
 
 ### Updates in this new version
-- Now you can finally enter the function without having to change `f`.
-- Output now consists of a DataFrame.
+- You can now plot your function and see the graph for yourself
 
 ### Bugs
-- Found a weird bug that causes the input to behave differently from expectation. Fix coming soon.
+- Found a weird bug that causes the input to behave differently from expectation while running the `.jl` files
 
 ----
 The program was implemented in:
