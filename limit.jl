@@ -1,4 +1,3 @@
-using DataFrames
 lim=function (f,x=0,eps=1.0e-7)
     i=1
     h=0.1
@@ -26,18 +25,3 @@ lim=function (f,x=0,eps=1.0e-7)
     df=DataFrame(Expression=expr,x=x,h=h,UpperLimit=f(x+h),LowerLimit=f(x-h),Summary=summary,Limit=limit,Iterations=iter)
     return df
 end
-
-
-println("Enter a function:")
-expr=readline()
-f=eval(:((x)->$(Meta.parse(expr))))
-lim(f)
-
-
-#Examples
-#f(x)=3x+2
-#lim(f)
-#f(x)=3x+2
-#lim(f,2)
-#f(x)=1/x
-#lim(f)
