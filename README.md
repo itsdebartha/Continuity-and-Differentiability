@@ -21,7 +21,7 @@ The file `limit.jl` is the file that you'd want to run. The program prompts for 
 - `Iterations`: Number of iterations taken for attaining convergence, if any (Note that this will stop at 100 if the function is discontinuous)
 
 
-Note that only functions of single variable are supported, as of now. Also, manually fabricated functions with jump discontinuity will not be accepted.
+Note that only functions of single variable are supported, as of now. Also, manually fabricated functions will not be accepted.
 ### Example runs
 
 ```
