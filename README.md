@@ -73,3 +73,10 @@ Environment:
   JULIA_EDITOR = code
   JULIA_NUM_THREADS =
 ```
+----
+### This repository contains
+- **plots**: Contains the plots for the example functions in the documentation
+- **dependencies.jl**: Important packages that needs to be loaded before running the program
+- **limit.jl**: The main working function for this program
+- **run.jl**: User input prompts and implementations for the main working function
+- **limit.ipynb**: Jupyter notebook for the whole program (in most of the cases you'd like to run this only without running the other three)
