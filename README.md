@@ -29,7 +29,7 @@ If anyone wants to dive deep:
 
 The program works by taking a suitable value of `h`(=0.1) and then checking if the two limits are almost equal or not (by the tolerance as defined earlier) while dividing `h` by 100 in successive iterations. If it satisfies the check (within 100 iterations), then it returns as "Continuous" (via the `i` variable which is an indicator). However, if after 100 iterations, the check is still not satisfied, the program returns as "Discontinuous", again via the indicator `i`.<br>
 Plotting the function is optional, however, it has been provided as an additional visualisation.<br>
-Note that only functions of single variable are supported, as of now. Also, manually fabricated functions are not be accepted.
+Note that only functions of single variable are supported, as of now. Also, manually fabricated functions are not be accepted. Further, tending to infinity is not alowed (yet).
 
 ### Example runs
 
