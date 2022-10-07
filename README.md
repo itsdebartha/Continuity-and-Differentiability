@@ -40,7 +40,7 @@ Note that only functions of single variable are supported, as of now. Also, manu
 ─────┼─────────────────────────────────────────────────────────────────────────────────────
    1 │ sin(x)/x        0      0.1    0.998334    0.998334  Continuous      1.0           1
 ```
-
+![Plot-1](plots/limit_plot1.png)
 
 ```
 1×8 DataFrame
@@ -49,7 +49,7 @@ Note that only functions of single variable are supported, as of now. Also, manu
 ─────┼───────────────────────────────────────────────────────────────────────────────────────────
    1 │ abs(x)/x        0  1.0e-199         1.0        -1.0  Discontinuous  Undefined         100
 ```
-
+![Plot-2](plots/limit_plot2.png)
 
 ### Future Implementations
 Coming soon to this is the differentiabiity checker, multi-variable support and many bug-fixes and improvements. An improved and updated documentation will also be provided.
