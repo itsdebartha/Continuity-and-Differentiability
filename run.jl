@@ -11,4 +11,4 @@ f=eval(:((x)->$(Meta.parse(expr))))
 lim(f,x,eps)
 
 plotlyjs()
-plot((x-5):0.2:(x+5),f.((x-5):0.2:(x+5)),label=expr)
+plot((x-5):0.001:(x+5),f.((x-5):0.001:(x+5)),label=expr)
