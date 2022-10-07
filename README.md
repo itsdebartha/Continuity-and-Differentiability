@@ -40,7 +40,7 @@ Note that only functions of single variable are supported, as of now. Also, manu
 ─────┼─────────────────────────────────────────────────────────────────────────────────────
    1 │ sin(x)/x        0      0.1    0.998334    0.998334  Continuous      1.0           1
 ```
-![Plot-1](plots/limit_plot1.png)
+
 
 ```
 1×8 DataFrame
