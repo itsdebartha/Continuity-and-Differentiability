@@ -5,7 +5,7 @@
 A repository for checking the continuity or differentiability of a mathematical function<br>
 Suppose we have a mathematical function in one variable and we'd like to find if it is continuous at a certain point or not. This program does exactly that and tries to find the answer for you.<br>
 The background is the simple fact of basic mathematics where we find out the left hand limits and the right hand limits and check if they are equal or not. In short, a function is continuous, if both the left hand and the right hand limits are the same. Mathematically, this can be defined as:<br>
-![Equation](https://latex2png.com/pngs/ecd3d8e13746a82127f4eed1f79de818.png)<br>
+$$\lim_{x\to a^+}f(x)=\lim_{x\to a^-}f(x)=f(a)$$
 The function `lim` contains three arguments:
 - `f`: The function to check the continuity
 - `x=0`:  The point where you'd want to check the continuity of `f` (by default its 0)
